@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Elasticsearch plugin hosting</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body style="padding: 30px">
+
+<div>
+    <i>NOTE: hq does not support to specify target server</i>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">Local</div>
+  <div class="panel-body">
+    <div><a target="_blank" href="/_plugin/head?base_uri=http://localhost:9200">head</a></div>
+    <div><a target="_blank" href="/_plugin/hq">hq</a></div>
+    <div><a target="_blank" href="/_plugin/kopf?location=http://localhost:9200">kopf</a></div>
+  </div>
+</div>
+
+
+<div class="panel panel-warning">
+  <div class="panel-heading">staging(http://10.0.0.0:9200)</div>
+  <div class="panel-body">
+    <div><a target="_blank" href="/_plugin/head?base_uri=http://10.0.0.0:9200">head</a></div>
+    <div><a target="_blank" href="/_plugin/hq">hq</a></div>
+    <div><a target="_blank" href="/_plugin/kopf?location=http://10.0.0.0:9200">kopf</a></div>
+  </div>
+</div>
+
+<div class="panel panel-danger">
+  <div class="panel-heading">prod server(http://10.0.0.0:9200)</div>
+  <div class="panel-body">
+    <div><a target="_blank" href="/_plugin/head?base_uri=http://10.0.0.0:9200">head</a></div>
+    <div><a target="_blank" href="/_plugin/hq">hq</a></div>
+    <div><a target="_blank" href="/_plugin/kopf?location=http://10.0.0.0:9200">kopf</a></div>
+  </div>
+</div>
+
+</body>
+</html>
