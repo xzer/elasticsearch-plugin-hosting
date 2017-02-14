@@ -15,7 +15,7 @@ then eg. to install head
 second parameter to specify plugin name to override the default name from install path (eg. HQ):
 
 ```
-./insall.sh mobz/elasticsearch-HQ hq
+./insall.sh royrusso/elasticsearch-HQ hq
 ```
 
 # start server
