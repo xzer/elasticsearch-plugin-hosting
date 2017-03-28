@@ -5,9 +5,11 @@ pluginName=$2
 
 echo goint to install $name
 
+owner=${name%%/*}
+
 subPath=${name#*/}
 
-prjName=${subPath%/*}
+prjName=${subPath%%/*}
 
 if [ X"" = X"$pluginName" ];
 then
@@ -22,20 +24,20 @@ then
     suffix="master"
 fi
 
-downloadFile=https://github.com/$name/archive/$suffix.zip
-unzipFolderName=$prjName-$suffix
+downloadFile=https://github.com/$owner/$prjName/archive/$suffix.zip
+unzipFolderName=$prjName-${suffix/\//-}
 
+echo owner: $owner
 echo subPath: $subPath
 echo prjName: $prjName
 echo pluginName: $pluginName
 echo suffix: $suffix
 echo downloadFile: $downloadFile
-
-
+echo unzipFolderName: $unzipFolderName
 
 cd _plugin
 
-wget -O ${pluginName}.zip https://github.com/$name/archive/master.zip
+wget -O ${pluginName}.zip $downloadFile
 
 unzip ${pluginName}.zip
 
