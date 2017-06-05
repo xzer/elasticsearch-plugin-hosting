@@ -1,0 +1,11 @@
+{
+  "name": "es-plugin-server",
+  "version": "0.1.0",
+  "description": "es site plugin hosting",
+  "main": "server.js",
+  "author": "xzer",
+  "dependencies": {
+    "express": "^4.15.3",
+    "http-proxy-middleware": "^0.17.4"
+  }
+}
