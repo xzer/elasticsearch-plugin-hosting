@@ -18,13 +18,13 @@ cd elasticsearch-plugin-hosting
 then eg. to install head
 
 ```bash
-./insall.sh mobz/elasticsearch-head
+./install.sh mobz/elasticsearch-head
 ```
 
 second parameter to specify plugin name to override the default name from install path (eg. HQ):
 
 ```bash
-./insall.sh royrusso/elasticsearch-HQ hq
+./install.sh royrusso/elasticsearch-HQ hq
 ```
 
 # start server
